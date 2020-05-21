@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AngularJS + React</title>
+</head>
+<body>
+  <main ng-app="demoApp">
+    <section ng-controller="demoCtrl">
+      <h1>{{ heading }}</h1>
+      <react-list
+        items="items"
+        toggled="toggled"
+        on-toggle="toggle"
+      />
+    </section>
+  </main>
+
+  <script src="bundle.js"></script>
+</body>
+</html>
